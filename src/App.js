@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Upload, Button } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
 import './App.css';
-import { convert } from './utils/api'
+import { convert, urls } from './utils/api'
 
 
 
@@ -15,7 +15,7 @@ const App = () => {
         setFilename()
     }
     const props = {
-        action: '/api/upload/',
+        action: urls.upload,
         onChange({ file, fileList }) {
             if (file.status === 'done') {
               console.log(file, fileList);

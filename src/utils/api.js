@@ -1,8 +1,8 @@
 import { baseRequest } from './request';
 
-const urls = {
-  upload: 'api/upload/',
-  convert: 'api/convert/',
+export const urls = {
+  upload: 'api/convert/upload/',
+  convert: 'api/convert/convert/',
 };
 
 export const convert = (filename) =>
