@@ -24,4 +24,4 @@ export const convert = (filename) =>
         link.download = filename.substring(0, filename.length - 5) + ".zip";   
         document.body.appendChild(link);
         link.click();
-    });
+});
